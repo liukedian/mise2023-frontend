@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/find_pass"
+    tools:context=".FindPasActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="找回密码"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+                android:id="@+id/finPass_phone"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:drawablePadding="5dp"
+                android:background="@drawable/editext_selector"
+            android:layout_marginLeft="50dp"
+                android:hint="请输入电话号码"
+                android:maxLines="1" />
+        <Button
+                android:id="@+id/send_captcha"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:textSize="13dp"
+                android:layout_marginLeft="240dp"
+                android:text="发送验证码">
+        </Button>
+
+        <EditText
+            android:id="@+id/getPassword_newPsw"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+
+            android:background="@drawable/editext_selector"
+            android:hint="请输入新的密码"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:layout_marginLeft="50dp"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/getPassword_newPswConfirm"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/editext_selector"
+            android:hint="请确认新的密码"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:layout_marginLeft="50dp"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/findPass_captcha"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/editext_selector"
+            android:hint="请输入验证码"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:layout_marginLeft="50dp"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/resetPsw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="30dp"
+            android:text="重置密码"
+            android:textSize="25dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

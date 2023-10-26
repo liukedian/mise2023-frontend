@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:paddingTop="5dp"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:id="@+id/iv_home"
+                android:src="@drawable/bottom_nav_home_icon"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_home"
+                android:textSize="20sp"
+                android:text="首页"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_find"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/iv_find"
+                android:layout_width="45dp"
+                android:layout_height="34dp"
+                android:src="@drawable/bottom_nav_subscribe" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_find"
+                android:textSize="20sp"
+                android:paddingTop="6dp"
+                android:text="订阅"
+                />
+
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_sub"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/iv_sub"
+            android:layout_width="45dp"
+            android:layout_height="34dp"
+            android:src="@drawable/bottom_nav_faxian_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_sub"
+            android:textSize="20sp"
+            android:layout_marginTop="6dp"
+            android:text="发现"
+            />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_mine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:id="@+id/iv_mine"
+                android:src="@drawable/bottom_nav_user_logo"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_mine"
+                android:textSize="20sp"
+                android:text="我的"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
